@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91d31858-9c07-4dea-adc9-b5f3ac537bce" name="Default Changelist" comment="" />
+    <list default="true" id="91d31858-9c07-4dea-adc9-b5f3ac537bce" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Local GPR5100.S1 Πρακτική Εργασία 1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Local GPR5100.S1 Πρακτική Εργασία 1/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Local GPR5100.S1 Πρακτική Εργασία 1/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Local GPR5100.S1 Πρακτική Εργασία 1/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Local GPR5100.S1 Πρακτική Εργασία 1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Local GPR5100.S1 Πρακτική Εργασία 1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Code/Editor/PunSceneSettingsFile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Code/Editor/PunSceneSettingsFile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SportCar.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SportCar.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SportCar2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SportCar2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SportCar.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SportCar.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SportCar2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SportCar2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Drive.cs" root0="FORCE_HIGHLIGHTING" />
@@ -15,22 +31,24 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerName.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LaunchManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SelectCar.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/FollowPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CountDown1.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/NetworkPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Drive.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LaunchManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerName.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NetworkPlayer.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1WcWtFN7KW4m5ijDjElqnFXOybs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -39,6 +57,7 @@
   <component name="PropertiesComponent">
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.4" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -81,7 +100,8 @@
       <option name="presentableId" value="Default" />
       <updated>1579449575158</updated>
       <workItem from="1579449576847" duration="4994000" />
-      <workItem from="1579543660532" duration="6740000" />
+      <workItem from="1579543660532" duration="8642000" />
+      <workItem from="1579630214296" duration="3010000" />
     </task>
     <servers />
   </component>

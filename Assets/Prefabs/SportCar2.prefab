@@ -1045,7 +1045,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &825718374439943667
 Transform:
   m_ObjectHideFlags: 0
@@ -1118,7 +1118,7 @@ MonoBehaviour:
   highPitch: 7
   wheelSmokePrefab: {fileID: 2612115759740127463, guid: bc3761b80fdd5c34dbed9e4e5b79923f,
     type: 3}
-  playerNamePrefab: {fileID: 2360015281423258966, guid: 3a921dab4a0e8074c896323d9667b56d,
+  playerNamePrefab: {fileID: 2288908780162912074, guid: d95d4377decbfeb4db705fb24937b6e1,
     type: 3}
   brakeLight:
   - {fileID: 754014179875683579}
