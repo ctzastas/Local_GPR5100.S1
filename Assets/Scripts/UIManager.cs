@@ -44,12 +44,12 @@ public class UIManager : MonoBehaviourPunCallbacks {
     // Start is called before the first frame update
     void Start() {
         racing = false;
-        foreach (GameObject gameObject  in countdownImages) {
-            gameObject.SetActive(false);
+        foreach (GameObject images  in countdownImages) {
+            images.SetActive(false);
         }
 
         raceEnd.SetActive(false);
-        startRace.SetActive(false);
+        startRace.SetActive(true);
         waitingText.SetActive(false);
         
         playerCar = PlayerPrefs.GetInt("PlayerCar");
@@ -73,11 +73,12 @@ public class UIManager : MonoBehaviourPunCallbacks {
                 waitingText.SetActive(true);
             }
         }
-        StartGame();
+
         
         selectCar.GetComponent<Drive>().enabled = true;
         selectCar.GetComponent<PlayerController>().enabled = true;
         selectCar.GetComponent<AntiRollBar>().enabled = true;
+        selectCar.GetComponent<FlipCar>().enabled = true;
     }
     
     void LateUpdate() {
@@ -115,7 +116,7 @@ public class UIManager : MonoBehaviourPunCallbacks {
             photonView.RPC("RestartGame", RpcTarget.All, null);
         }
         else {
-            SceneManager.LoadScene("GameScene");   
+            SceneManager.LoadScene("MainMenu");   
         }
     }
     

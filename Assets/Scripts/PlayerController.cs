@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         if (!UIManager.racing) {
+            drive.Go(0, 0, 1);
             return;
         }
         float moveY = Input.GetAxis("Vertical");

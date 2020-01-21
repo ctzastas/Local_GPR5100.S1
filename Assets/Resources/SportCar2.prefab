@@ -1097,10 +1097,10 @@ MonoBehaviour:
   - {fileID: 8126060339688673196}
   - {fileID: 8126060339043375733}
   - {fileID: 8126060340085004178}
-  maxSpeed: 250
-  torque: 500
+  maxSpeed: 350
+  torque: 800
   maxSteerAngle: 30
-  handBrake: 1000
+  handBrake: 3000
   gears: 4
   carRigidbody: {fileID: 0}
   wheels:

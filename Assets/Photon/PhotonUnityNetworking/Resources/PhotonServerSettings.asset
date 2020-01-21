@@ -32,12 +32,11 @@ MonoBehaviour:
   - ClickRpc
   - DestroyRpc
   - DestroySpaceship
+  - DisconnectGame
   - Fire
+  - MainMenu
   - RespawnSpaceship
   - RestartGame
   - StartGame
-  - NewGame
-  - MainMenu
-  - DisconnectGame
   DisableAutoOpenWizard: 1
   ShowSettings: 0

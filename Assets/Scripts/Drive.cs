@@ -71,7 +71,7 @@ public class  Drive : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update() {
+    public void Update() {
         // Wait for countdown to end then player can move
         if (!UIManager.racing) {
             return;
