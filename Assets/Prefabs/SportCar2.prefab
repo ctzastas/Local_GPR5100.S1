@@ -1118,8 +1118,9 @@ MonoBehaviour:
   highPitch: 7
   wheelSmokePrefab: {fileID: 2612115759740127463, guid: bc3761b80fdd5c34dbed9e4e5b79923f,
     type: 3}
-  playerNamePrefab: {fileID: 2288908780162912074, guid: d95d4377decbfeb4db705fb24937b6e1,
+  playerNamePrefab: {fileID: 2360015281423258966, guid: 3a921dab4a0e8074c896323d9667b56d,
     type: 3}
+  playerSpeedPrefab: {fileID: 0}
   brakeLight:
   - {fileID: 754014179875683579}
   - {fileID: 754014178904029526}

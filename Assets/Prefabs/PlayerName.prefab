@@ -65,8 +65,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 5f52bc2b0a3742842929cacbcdcfb5da, type: 3}
-    m_FontSize: 80
+    m_Font: {fileID: 12800000, guid: 495c9e2a934bcc640a8d7427b13cb680, type: 3}
+    m_FontSize: 35
     m_FontStyle: 1
     m_BestFit: 1
     m_MinSize: 0
@@ -91,5 +91,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: {fileID: 0}
-  lap: {fileID: 0}
+  speed: {fileID: 0}
   target: {fileID: 0}
+  renderer: {fileID: 0}

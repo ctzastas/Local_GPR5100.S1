@@ -47,6 +47,11 @@ public class LaunchManager : MonoBehaviourPunCallbacks {
             playerName.text = PlayerPrefs.GetString("PlayerName");
         }
     }
+
+    public void ExitGame() {
+        PhotonNetwork.Disconnect();
+        Application.Quit();
+    }
     
     /* ============ Network Callbacks ============== */
     

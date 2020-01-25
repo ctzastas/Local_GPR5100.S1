@@ -10,15 +10,15 @@ public class  Drive : MonoBehaviour {
     
     private float moveX;                                  // Steering car
     private float moveY;                                  // Move car 
-    private float braking;                                // Brake car
+    private float brake;                                // Brake car
 
     [Header("Forces")]
     [Space]
     // Variables for forces
-    [SerializeField] private float maxSpeed = 320f;       // The maximum speed of the car
+    [SerializeField] private float maxSpeed = 250f;       // The maximum speed of the car
     [SerializeField] private float torque = 800f;        // The torque power of the car
     [SerializeField] private float maxSteerAngle = 30;   // Steering Angle of the wheels
-    [SerializeField] private float handBrake = 2500;     // The power of braking the car
+    [SerializeField] private float handBrake = 3500;     // The power of braking the car
     private float gearsLength = 4f;                      // This value change the engine sound of the car  
     [SerializeField] private float gears = 4f;
     private float RPM;
@@ -33,6 +33,8 @@ public class  Drive : MonoBehaviour {
     [SerializeField] private GameObject [] wheels;
     Quaternion wheelQuaternion;
     Vector3 wheelPosition;
+    private Renderer caMesh;
+    
     
     [Header("Sounds")]
     [Space]
@@ -46,7 +48,9 @@ public class  Drive : MonoBehaviour {
     [Space] 
     [SerializeField] private ParticleSystem wheelSmokePrefab;
     [SerializeField] private GameObject playerNamePrefab;
+    [SerializeField] private GameObject playerSpeedPrefab;
     ParticleSystem [] wheelSmoke = new ParticleSystem[4];
+    public Text speedText;
     
     [Header("Lights")]
     [Space]
@@ -58,6 +62,8 @@ public class  Drive : MonoBehaviour {
         GameObject playerName = Instantiate(playerNamePrefab);
         playerName.GetComponent<PlayerName>().target = carRigidbody.gameObject.transform;
         playerName.GetComponent<Text>().text = PlayerPrefs.GetString("PlayerName");
+        playerName.GetComponent<PlayerName>().renderer = caMesh;
+        
         // Set brake light off
         for (int i = 0; i < 2; i++) {
             brakeLight[i].SetActive(false);    
@@ -73,13 +79,15 @@ public class  Drive : MonoBehaviour {
     // Update is called once per frame
     public void Update() {
         // Wait for countdown to end then player can move
-        if (!UIManager.racing) {
+        if (!UIManager.isRacing) {
             return;
         }
+        
         moveY = Input.GetAxis("Vertical");
         moveX = Input.GetAxis("Horizontal");
-        braking = Input.GetAxis("Jump");
-        Go(moveY, moveX, braking);
+        brake = Input.GetAxis("Jump");
+        
+        MoveCar(moveY, moveX, brake);
         SpeedInKHM();
         Skidding();
         EngineSound();
@@ -88,11 +96,12 @@ public class  Drive : MonoBehaviour {
     // Calculates car speed in khm
     public float currentSpeed => carRigidbody.velocity.magnitude * gearsLength;
 
-    public void Go(float acceleration, float steering, float braking) {
+    public void MoveCar(float acceleration, float steering, float braking) {
         // Set acceleration, steering and brake with min and max values of Mathf.Clamp 
         acceleration = Mathf.Clamp(acceleration, -1, 1);
         steering = Mathf.Clamp(steering, -1, 1) * maxSteerAngle;
         braking = Mathf.Clamp(braking, 0, 1) * handBrake;
+        
         // Enable brake light when the value is higher than 0
         for (int j = 0; j < 2; j++) {
             if (braking > 0) {
@@ -102,11 +111,14 @@ public class  Drive : MonoBehaviour {
                 brakeLight[j].SetActive(false);
             }   
         }
+        
         thrustTorque = 0;
+        
         // Set a max speed of the car
         if (currentSpeed < maxSpeed) {
             thrustTorque = acceleration * torque;
         }
+        
         for (int i = 0; i < 4; i++) {
             // Set a rear wheels torque
             if (i > 1) {
@@ -119,6 +131,7 @@ public class  Drive : MonoBehaviour {
             else {
                 wheelsCollider[i].brakeTorque = braking;
             }
+            
             // Rotating the mesh(wheels) 
             wheelsCollider[i].GetWorldPose(out wheelPosition, out wheelQuaternion);
             wheels[i].transform.position = wheelPosition;
@@ -129,9 +142,11 @@ public class  Drive : MonoBehaviour {
     public void Skidding() {
         // Wheels skidding
         int numSkidding = 0;
+        
         for (int i = 0; i < 4; i++) {
             WheelHit wheelHit;
             wheelsCollider[i].GetGroundHit(out wheelHit);
+            
             // Check if slip happens
             if (Mathf.Abs(wheelHit.forwardSlip) >= 0.97f || Mathf.Abs(wheelHit.sidewaysSlip) >= 0.7f) {
                 // Increase wheels skidding
@@ -145,6 +160,7 @@ public class  Drive : MonoBehaviour {
                 wheelSmoke[i].Emit(1);
             }
         }
+        
         // Check if is not slipping(for all wheels) and is playing sound 
         if (numSkidding == 0 && skidSound.isPlaying) {
             skidSound.Stop();
@@ -154,18 +170,21 @@ public class  Drive : MonoBehaviour {
     // Show speed in KHM
     public void SpeedInKHM() {
         float showSpeed = Mathf.Round(currentSpeed);
-        Debug.Log("Speed " + showSpeed + " Km/h");
+        speedText.text = "" + showSpeed + "Km/h";
     }
 
     public void EngineSound() {
         float gearPercentage = (1 / gears);
         float targetGear = Mathf.InverseLerp(gearPercentage * currentGear, gearPercentage * (currentGear + 1), Mathf.Abs(currentSpeed / maxSpeed));
         currentGearPerc = Mathf.Lerp(currentGearPerc, targetGear, Time.deltaTime * 5f);
-        float gearsNumFactor = currentGear / (float) gears;
+        
+        float gearsNumFactor = currentGear / gears;
         RPM = Mathf.Lerp(gearsNumFactor, 1, currentGearPerc);
+        
         float speedPercentage = Mathf.Abs(currentSpeed / maxSpeed);
         float upperGearMax = (1 / gears) * (currentGear + 1);
         float downGearMax = (1 / gears) * currentGear;
+        
         if (currentGear > 0 && speedPercentage < downGearMax) {
             currentGear--;
         }

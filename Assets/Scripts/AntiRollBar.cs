@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class AntiRollBar : MonoBehaviour {
 
@@ -29,9 +27,11 @@ public class AntiRollBar : MonoBehaviour {
         float travelLeft = 1f;
         float travelRight = 1f;
         bool groundedLeft = wheelLeft.GetGroundHit(out hit);
+        
         if (groundedLeft) {
             travelLeft = (-wheelLeft.transform.InverseTransformPoint(hit.point).y - wheelLeft.radius) / wheelLeft.suspensionDistance;
         }
+        
         bool groundedRight = wheelRight.GetGroundHit(out hit);
         if (groundedRight) {
             travelRight = (-wheelRight.transform.InverseTransformPoint(hit.point).y - wheelRight.radius) / wheelRight.suspensionDistance;
