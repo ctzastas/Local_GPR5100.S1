@@ -4,24 +4,23 @@
     <list default="true" id="91d31858-9c07-4dea-adc9-b5f3ac537bce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Local GPR5100.S1 Πρακτική Εργασία 1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Local GPR5100.S1 Πρακτική Εργασία 1/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Local GPR5100.S1 Πρακτική Εργασία 1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Local GPR5100.S1 Πρακτική Εργασία 1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/HUD.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/HUD/RearCamera.renderTexture" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/HUD/RearCamera.renderTexture.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerName.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerName.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Speed_Text.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Speed_Text.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SportCar.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SportCar.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SportCar2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SportCar2.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/SportCar.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SportCar.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/SportCar2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/SportCar2.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/New Scene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/New Scene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AntiRollBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AntiRollBar.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Drive.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Drive.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LaunchManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LaunchManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/NetworkPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NetworkPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerName.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerName.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RaceEnd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RaceEnd.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,13 +32,16 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Drive.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerName.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RaceEnd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Photon/PhotonUnityNetworking/Code/PhotonNetwork.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7559BF97-67E7-4FF5-906F-18401F66CD57/b7/36d14862/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NetworkPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerSpeed.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Resources/SportCar.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FollowPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerName.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LaunchManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AntiRollBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SelectCar.cs" root0="FORCE_HIGHLIGHTING" />
@@ -51,12 +53,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CountDown1.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AntiRollBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RaceEnd.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LaunchManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Drive.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerName.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RaceEnd.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerSpeed.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NetworkPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Drive.cs" />
       </list>
     </option>
   </component>
@@ -116,7 +119,8 @@
       <workItem from="1579543660532" duration="8642000" />
       <workItem from="1579630214296" duration="3010000" />
       <workItem from="1579890652413" duration="5600000" />
-      <workItem from="1579953532503" duration="8524000" />
+      <workItem from="1579953532503" duration="25283000" />
+      <workItem from="1580035226261" duration="19219000" />
     </task>
     <servers />
   </component>

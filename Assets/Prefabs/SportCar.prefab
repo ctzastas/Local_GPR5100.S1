@@ -1112,11 +1112,11 @@ MonoBehaviour:
   - {fileID: 6538110203554700463}
   - {fileID: 6538110201837605971}
   maxSpeed: 350
-  torque: 1000
+  torque: 800
   maxSteerAngle: 30
-  handBrake: 7000
+  handBrake: 3000
   gears: 4
-  carRigidbody: {fileID: 0}
+  carRigidbody: {fileID: 6538110201628933265}
   wheels:
   - {fileID: 6537479187988069592}
   - {fileID: 6537356725622428528}
@@ -1130,7 +1130,8 @@ MonoBehaviour:
     type: 3}
   playerNamePrefab: {fileID: 2360015281423258966, guid: 3a921dab4a0e8074c896323d9667b56d,
     type: 3}
-  playerSpeedPrefab: {fileID: 0}
+  speedText: {fileID: 5028237320515821861, guid: e873c889beb5e0344ad969e9af5b513f,
+    type: 3}
   brakeLight:
   - {fileID: 6538110203289999380}
   - {fileID: 6538110202122560441}
@@ -1616,7 +1617,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 8400000, guid: 9819ecc86686e01409b323f6161639c9, type: 2}
+  m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 1
   m_TargetEye: 3
   m_HDR: 1

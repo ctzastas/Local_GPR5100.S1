@@ -1,14 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class RaceEnd : MonoBehaviour {
-
-    public GameObject raceEnd;
     
+    public GameObject newGameButton;
+    public GameObject mainMenuButton;
+
+    private void Start() {
+        newGameButton.SetActive(false);
+        mainMenuButton.SetActive(false);
+    }
+
     private void OnTriggerEnter(Collider other) {
-        if (other.gameObject.CompareTag("Player")) {
-            raceEnd.SetActive(true);
+        UIManager.isRacing = false;
+        if (!UIManager.isRacing) {
+            newGameButton.SetActive(true);
+            mainMenuButton.SetActive(true);
         }
     }
 }

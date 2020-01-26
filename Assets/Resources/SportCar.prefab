@@ -396,7 +396,7 @@ MonoBehaviour:
   maxSteerAngle: 30
   handBrake: 3500
   gears: 4
-  carRigidbody: {fileID: 0}
+  carRigidbody: {fileID: 3024093941906422063}
   wheels:
   - {fileID: 3022618295556946278}
   - {fileID: 3022740749406000846}
@@ -409,10 +409,6 @@ MonoBehaviour:
   wheelSmokePrefab: {fileID: 2612115759740127463, guid: bc3761b80fdd5c34dbed9e4e5b79923f,
     type: 3}
   playerNamePrefab: {fileID: 2360015281423258966, guid: 3a921dab4a0e8074c896323d9667b56d,
-    type: 3}
-  playerSpeedPrefab: {fileID: 6000230494546896727, guid: e873c889beb5e0344ad969e9af5b513f,
-    type: 3}
-  speedText: {fileID: 4229345577774487047, guid: e873c889beb5e0344ad969e9af5b513f,
     type: 3}
   brakeLight:
   - {fileID: 3024093940345740714}
@@ -473,10 +469,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerNamePrefab: {fileID: 2360015281423258966, guid: 3a921dab4a0e8074c896323d9667b56d,
     type: 3}
-  speedTextPrefab: {fileID: 6000230494546896727, guid: e873c889beb5e0344ad969e9af5b513f,
-    type: 3}
   carRigidbody: {fileID: 3024093941906422063}
-  carMesh: {fileID: 3001217264822380050}
 --- !u!114 &7820156330364522488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1312,8 +1305,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.7393138, y: 0.6520198, z: 1.1652043}
-  m_Center: {x: 0.005248189, y: 0.42384234, z: 1.463581}
+  m_Size: {x: 1.7393138, y: 0.6103564, z: 1.1379659}
+  m_Center: {x: 0.005248189, y: 0.44467404, z: 1.4772}
 --- !u!114 &2232260423904694509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2407,8 +2400,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.871467, y: 1.1062844, z: 2.3026047}
-  m_Center: {x: 0, y: 0.64781344, z: -0.23270702}
+  m_Size: {x: 1.871467, y: 1.0427525, z: 2.3026047}
+  m_Center: {x: 2.4574713e-16, y: 0.6795794, z: -0.23270702}
 --- !u!65 &3023175371794571169
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2420,8 +2413,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5871084, y: 0.72297883, z: 0.74837685}
-  m_Center: {x: -0.0381006, y: 0.43777645, z: -1.7308254}
+  m_Size: {x: 1.5871084, y: 0.7016096, z: 0.74837667}
+  m_Center: {x: -0.0381006, y: 0.44846106, z: -1.7308254}
 --- !u!82 &3023175371794571174
 AudioSource:
   m_ObjectHideFlags: 0

@@ -488,6 +488,7 @@
           <e p="NetworkPlayer.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="PlayerName.cs" t="Include" />
+          <e p="PlayerSpeed.cs" t="Include" />
           <e p="RaceEnd.cs" t="Include" />
           <e p="SelectCar.cs" t="Include" />
           <e p="SpinCars.cs" t="Include" />

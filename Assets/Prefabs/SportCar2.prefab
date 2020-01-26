@@ -1102,11 +1102,11 @@ MonoBehaviour:
   - {fileID: 754014180082820585}
   - {fileID: 754014178905925646}
   maxSpeed: 250
-  torque: 500
+  torque: 800
   maxSteerAngle: 30
-  handBrake: 1000
+  handBrake: 3000
   gears: 4
-  carRigidbody: {fileID: 0}
+  carRigidbody: {fileID: 828251970159435745}
   wheels:
   - {fileID: 827910695929120429}
   - {fileID: 828556000321815053}
@@ -1120,7 +1120,8 @@ MonoBehaviour:
     type: 3}
   playerNamePrefab: {fileID: 2360015281423258966, guid: 3a921dab4a0e8074c896323d9667b56d,
     type: 3}
-  playerSpeedPrefab: {fileID: 0}
+  speedText: {fileID: 5028237320515821861, guid: e873c889beb5e0344ad969e9af5b513f,
+    type: 3}
   brakeLight:
   - {fileID: 754014179875683579}
   - {fileID: 754014178904029526}

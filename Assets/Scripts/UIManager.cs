@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Photon.Pun;
@@ -14,10 +13,6 @@ public class UIManager : MonoBehaviourPunCallbacks {
     [Header("Display Images Timer")]
     [Space]
     [SerializeField] private float timer = 1f;
-    
-    [Header("Panels")]
-    [Space]
-    public GameObject raceEnd;
 
     [Header("Prefab")]
     [Space]
@@ -54,7 +49,6 @@ public class UIManager : MonoBehaviourPunCallbacks {
         foreach (GameObject images  in countdownImages) {
             images.SetActive(false);
         }
-        raceEnd.SetActive(false);
         startRace.SetActive(false);
         waitingText.SetActive(false);
         
@@ -91,7 +85,6 @@ public class UIManager : MonoBehaviourPunCallbacks {
             // If player is the Master client enable StartRace button
             if (PhotonNetwork.IsMasterClient) {
                 startRace.SetActive(true);
-                Debug.Log("Is Master");
             }
             else {
                 waitingText.SetActive(true);
@@ -122,11 +115,11 @@ public class UIManager : MonoBehaviourPunCallbacks {
     
     [PunRPC]
     public void NewGame() {
-        isRacing = false;
         if (PhotonNetwork.IsConnected) {
             photonView.RPC("RestartGame", RpcTarget.All, null);
         }
         else {
+            PhotonNetwork.LeaveRoom();
             SceneManager.LoadScene("MainMenu");   
         }
     }
@@ -143,7 +136,7 @@ public class UIManager : MonoBehaviourPunCallbacks {
     
     [PunRPC]
     public void DisconnectGame() {
-        PhotonNetwork.Disconnect();
+        PhotonNetwork.LeaveRoom();
         PhotonNetwork.LoadLevel("MainMenu");
     }
 }

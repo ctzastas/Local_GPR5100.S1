@@ -794,6 +794,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: {fileID: 1559586400}
+  playerSpeed: {fileID: 2716611605418296550, guid: e873c889beb5e0344ad969e9af5b513f,
+    type: 3}
   feedbackText: {fileID: 1201282000}
 --- !u!4 &746514352
 Transform:

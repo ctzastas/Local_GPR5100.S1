@@ -48,9 +48,8 @@ public class  Drive : MonoBehaviour {
     [Space] 
     [SerializeField] private ParticleSystem wheelSmokePrefab;
     [SerializeField] private GameObject playerNamePrefab;
-    [SerializeField] private GameObject playerSpeedPrefab;
     ParticleSystem [] wheelSmoke = new ParticleSystem[4];
-    public Text speedText;
+    //public GameObject speedText;
     
     [Header("Lights")]
     [Space]
@@ -113,12 +112,10 @@ public class  Drive : MonoBehaviour {
         }
         
         thrustTorque = 0;
-        
         // Set a max speed of the car
         if (currentSpeed < maxSpeed) {
             thrustTorque = acceleration * torque;
         }
-        
         for (int i = 0; i < 4; i++) {
             // Set a rear wheels torque
             if (i > 1) {
@@ -142,7 +139,6 @@ public class  Drive : MonoBehaviour {
     public void Skidding() {
         // Wheels skidding
         int numSkidding = 0;
-        
         for (int i = 0; i < 4; i++) {
             WheelHit wheelHit;
             wheelsCollider[i].GetGroundHit(out wheelHit);
@@ -160,7 +156,6 @@ public class  Drive : MonoBehaviour {
                 wheelSmoke[i].Emit(1);
             }
         }
-        
         // Check if is not slipping(for all wheels) and is playing sound 
         if (numSkidding == 0 && skidSound.isPlaying) {
             skidSound.Stop();
@@ -170,7 +165,7 @@ public class  Drive : MonoBehaviour {
     // Show speed in KHM
     public void SpeedInKHM() {
         float showSpeed = Mathf.Round(currentSpeed);
-        speedText.text = "" + showSpeed + "Km/h";
+       // speedText.text = "" + showSpeed + "Km/h";
     }
 
     public void EngineSound() {

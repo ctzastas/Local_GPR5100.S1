@@ -66,7 +66,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 495c9e2a934bcc640a8d7427b13cb680, type: 3}
-    m_FontSize: 35
+    m_FontSize: 20
     m_FontStyle: 1
     m_BestFit: 1
     m_MinSize: 0
@@ -90,7 +90,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 121b8e69b3539de4a818ca4da687699a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: {fileID: 0}
-  speed: {fileID: 0}
   target: {fileID: 0}
   renderer: {fileID: 0}
